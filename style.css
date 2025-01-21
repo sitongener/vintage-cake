@@ -1,0 +1,12 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(4 1fr);
+    grid-template-columns: 1fr 1fr 2fr 2fr 2fr 100px;
+    gap:15px
+}
+
+body{
+    background-color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
