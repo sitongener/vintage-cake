@@ -1,12 +1,259 @@
-.grid-container{
-    display: grid;
-    grid-template-rows: repeat(4 1fr);
-    grid-template-columns: 1fr 1fr 2fr 2fr 2fr 100px;
-    gap:15px
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* outline: 1px solid red;  */
 }
 
+.ballet {
+    font-family: "Ballet", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .volkhov-regular {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .alice-regular {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  h1{
+    font-family: "Volkhov", serif;
+  }
+
+  h2{
+    font-family: "Volkhov", serif;
+  }
+
+  p{
+    font-family: "Alice", serif;
+  }
+  
+  
+.grid-container{
+    display: grid;
+    width: 100%;
+    height: auto; /* Adjust based on content */
+    overflow: hidden;
+    grid-template-rows: 1fr 200px 2fr 100px;
+    grid-template-columns: 1fr 4fr ;
+    gap:10px
+   
+}
+   
 body{
     background-color: #1a1a1a;
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
+    margin: -10px;
+   
+   
 }
+
+
+
+.headerwrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 2/3;
+  
+}
+.headerwrapper a{
+position: relative;
+
+}
+.headerwrapper h1{
+font-size: 200px;
+font-family: "Ballet", serif;
+text-align: center;
+color: rgb(255, 255, 255, 0.8);
+margin-bottom: -10px;
+margin-top: 1px;
+z-index: 1;
+
+}
+.headerwrapper h2{
+    font-size: 100px;
+    font-family: "Volkhov", serif;
+    
+    /* font-style: italic; */
+    color: rgb(255, 0, 81);
+   
+    margin-top: -150px;
+    
+  
+}
+
+.frontcakepic{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.frontcake1 {
+    width: 900px; /* Example width */
+    height: auto; /* Maintain aspect ratio */
+  
+    display: block;
+ margin-bottom: -100px;
+  }
+.frontcake2{
+    position: absolute;
+    width: 300px;
+    top: 30%;
+    left: 20%;
+    
+}
+.frontcake3{
+    position: absolute;
+    width: 400px;
+    top: 30%;
+    right: 15%;
+}
+.frontcake4{
+    position: absolute;
+    width: 500px;
+    bottom: -10%;
+    left: 10%;
+}
+.frontcake5{
+    position: absolute;
+    width: 300px;
+    bottom: 10px;
+    right: 15%;
+}
+
+.aboutarea{
+    grid-area: 2/1/3/4;
+   
+    padding-bottom: 10px;
+    background-color: rgb(235, 232, 236);
+    box-sizing: border-box;
+    height: 200px;
+    
+    
+}
+.abouttext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 0, 98);
+    margin-top: 30px;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+.abouttext h2{
+   
+    align-self: flex-start;
+}
+
+
+.cakemenu {
+    grid-area: 3/2/4/3;
+    display: grid;
+    grid-template-columns: repeat(3, 300px); /* 3 columns */
+    grid-template-rows: repeat(3, 300px); /* 3 rows */
+    gap: 100px;
+    margin: auto;
+    margin-top: 100px;
+    
+}
+
+.cake-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 5px double #eeeeee;
+    border-radius: 20px;
+    padding: 10px; */
+    justify-content: flex-end; /* Ensures text appears at the bottom */
+}
+
+.cakemenupic {
+    width: 100%; /* Ensure the images fill the grid items */
+    height: 100%;
+    object-fit: cover; /* Ensure aspect ratio is maintained while filling the space */
+    border-radius: 10px; /* Optional: add rounded corners to the images */
+    border: 5px double #eeeeee;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.cake-text {
+    margin-top: 10px;
+    font-size: 16px; /* Adjust as needed */
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cakenav{
+    text-decoration: none; /* Remove default underline */
+}
+.cake-text:hover{
+    color: crimson;
+}
+
+
+.leftsidelace{
+    display: flex;
+    flex-direction: column;
+    grid-area: 1/1/5/2;
+    width: 300px;
+    z-index: 1;
+  
+}
+.leftsidelace img{
+    overflow: hidden;
+    transform: translate(-50%, -10%) translateX(20px); 
+    width: 300px; /* Set image width */
+    height: auto; 
+}
+
+.rightsidelace{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    grid-area: 1/3/5/3;
+    width: 300px;
+    z-index: 1;
+  
+}
+.rightsidelace img{
+  
+    transform: translate(25%, -10%) translateX(20px) scaleX(-1);
+    width: 300px; 
+    height: auto; 
+}
+.bottomlace {
+    grid-area: 4/1/5/4;
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Ensure it fills the grid container */
+    justify-content: center; /* Align content properly */
+    overflow: hidden; /* Prevent overflow */
+}
+.bottomlace img {
+    position: relative;
+    top: 20px;
+    width: auto; /* Maintain aspect ratio */
+    height: 100px;
+    transform: translateX(0); /* Remove unnecessary offsets */
+}
+
+.bottomtext{
+    position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+top: -400px;
+}
+  
