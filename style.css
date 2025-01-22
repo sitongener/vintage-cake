@@ -21,6 +21,18 @@ box-sizing: border-box;
     font-weight: 400;
     font-style: normal;
   }
+  .young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .beth-ellen-regular {
+    font-family: "Beth Ellen", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
   h1{
     font-family: "Volkhov", serif;
   }
@@ -46,9 +58,11 @@ box-sizing: border-box;
 }
    
 body{
-    background-color: #1a1a1a;
+    background-color:black;
+    
+  
     font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
+    color: rgb(241, 13, 59);
     margin: -10px;
    
    
@@ -70,38 +84,43 @@ position: relative;
 
 }
 .headerwrapper h1{
-font-size: 200px;
+font-size: 180px;
 font-family: "Ballet", serif;
 text-align: center;
-color: rgb(255, 255, 255, 0.8);
+color: rgb(241, 13, 59);
 margin-bottom: -10px;
 margin-top: 1px;
 z-index: 1;
 
 }
 .headerwrapper h2{
-    font-size: 100px;
-    font-family: "Volkhov", serif;
-    
+    font-size: 90px;
+    font-weight: lighter;
+    font-family: "Beth Ellen", serif;
+
     /* font-style: italic; */
-    color: rgb(255, 0, 81);
-   
+    color: rgb(60, 60, 60);
+  
     margin-top: -150px;
     
   
 }
+
+
 
 .frontcakepic{
     grid-row: 2;
     grid-column: 2;
 }
 
+
 .frontcake1 {
     width: 900px; /* Example width */
     height: auto; /* Maintain aspect ratio */
-  
+  margin-bottom: -100px;
     display: block;
- margin-bottom: -100px;
+ 
+
   }
 .frontcake2{
     position: absolute;
@@ -148,6 +167,7 @@ z-index: 1;
     margin-top: 30px;
     padding-right: 15%;
     padding-left: 15%;
+    font-style: italic;
 }
 .abouttext h2{
    
@@ -159,7 +179,7 @@ z-index: 1;
     grid-area: 3/2/4/3;
     display: grid;
     grid-template-columns: repeat(3, 300px); /* 3 columns */
-    grid-template-rows: repeat(3, 300px); /* 3 rows */
+    grid-template-rows: repeat(4, 300px); /* 3 rows */
     gap: 100px;
     margin: auto;
     margin-top: 100px;
@@ -189,7 +209,8 @@ z-index: 1;
 .cake-text {
     margin-top: 10px;
     font-size: 16px; /* Adjust as needed */
-    color: #fff;
+    color: #ff0044;
+    font-style: bold;
     text-align: center;
     font-weight: bold;
 }
@@ -198,7 +219,7 @@ z-index: 1;
     text-decoration: none; /* Remove default underline */
 }
 .cake-text:hover{
-    color: crimson;
+    color: rgb(255, 255, 255);
 }
 
 

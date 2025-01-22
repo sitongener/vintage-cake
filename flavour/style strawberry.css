@@ -3,14 +3,53 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+.ballet {
+    font-family: "Ballet", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .volkhov-regular {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .alice-regular {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .beth-ellen-regular {
+    font-family: "Beth Ellen", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
    
 body{
-    background-color: #1a1a1a;
+    background-color: #000000;
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
     margin: -10px;
     margin: 10px;
+}
+
+h1{
+    font-family: "Ballet", serif;
+}
+h2{
+    font-family: "Young Serif", serif;
+}
+h3{
+    font-family: "Alice", serif;
+}
+p{
+    font-family: "Alice", serif;
 }
 
 
@@ -24,26 +63,34 @@ body{
     height: 200px;
     grid-row: 1;
     grid-column: 2/3;
-    background-color: rgb(233, 198, 204);
+    background-image: url(/img/assetfork.jpg);
+    /* background-color: rgb(233, 198, 204); */
   
 }
 .backlink {
+    display: flex;
     position: absolute; /* Position the link absolutely within the headerwrapper */
     top: 20px; /* Distance from the top of the container */
     left: 20px; /* Distance from the left of the container */
     text-decoration: none; /* Remove default underline */
-    font-size: 16px; /* Adjust font size */
-    color: deeppink; /* Style the text color */
+    font-size: 16px;
+     /* Adjust font size */
+    color: rgb(255, 20, 87); /* Style the text color */
     font-weight: bold; /* Make it stand out */
 }
+.backlink h2:hover{
+    color: #000000;
+}
+
 .headerwrapper h1{
 font-size: 80px;
 text-align: center;
+color:  rgb(255, 0, 102);
 
 }
 .headerwrapper h2{
-    font-size: 50px;
-    color: deeppink;
+    font-size: 25px;
+    color: rgb(255, 0, 102);
 }
 
 .toplace{
@@ -87,17 +134,27 @@ text-align: center;
     align-items: center;
     
 }
-.cakediv h3{
+.cakediv a{
     color: crimson;
     padding-left: 50px;
     align-self:first baseline;
+    text-decoration: none;
+}
+.cakediv a:hover{
+    color: #ffffff;
+
 }
 .grid-image img{
     
     width: 70%;
     border-radius: 10px;
-    
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)); Glow effect
+      transition: filter 0.3s ease, transform 0.3s ease;
    
+}
+.grid-image img:hover{
+    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 1)); /* Intense glow on hover */
+      transform: scale(1.05); /* Optional zoom effect *
 }
 
 .footer{

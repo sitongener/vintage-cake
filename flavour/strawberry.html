@@ -6,10 +6,21 @@
     <title>Strawberry</title>
     <link href="style strawberry.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Pinyon+Script&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="headerwrapper">
-        <a href="../index.html" class="backlink"><h3>Back</h3></a>  
+        <a href="../index.html" class="backlink">
+            <img src="/img/backicon.svg" alt="backicon">
+            <h2>Back</h2>
+        </a>  
         <h1>Strawberry Cake Collection</h1>
       </div>
 
@@ -25,15 +36,15 @@
 
 <div class="grid-image">
     <div class="cakediv">
-        <h3>cakeindex</h3>
-        <img src="/img/cakeflavourtest.jpg" alt="cake1">
+        <a href="../cakes/cake1.html"><h3>⑴</h3></a>
+        <img src="/img/strawberryshort.png" alt="cake1">
     </div>
     <div class="cakediv">
-        <h3>cakeindex</h3>
-        <img src="/img/cakeflavourtest.jpg" alt="cake1">
+        <a href="../cakes/cake1.html"><h3>cakeindex</h3></a>
+        <img src="/img/frontcake3.png" alt="cake1">
     </div>
     <div class="cakediv">
-        <h3>cakeindex</h3>
+        <a href="../cakes/cake1.html"><h3>cakeindex</h3></a>
         <img src="/img/cakeflavourtest.jpg" alt="cake1">
     </div>
     <div class="cakediv">
@@ -116,7 +127,7 @@
 
     <script>
         const cakeDivs = document.querySelectorAll('.cakediv');
-const colors = ['lightblue', 'lightyellow'];
+const colors = ['black', '#404040'];
 
 cakeDivs.forEach((div, index) => {
     div.style.backgroundColor = colors[index % colors.length];
